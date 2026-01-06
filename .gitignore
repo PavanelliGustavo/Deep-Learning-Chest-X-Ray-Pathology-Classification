@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+
+# Virtual environment
+venv/
+.env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data
+data/
+datasets/
+*.zip
+*.tar.gz
+
+# Models
+*.pt
+*.pth
+
+# Results (optional if large)
+results/*.npy
+
+# OS
+.DS_Store
+Thumbs.db
