@@ -62,24 +62,24 @@ chest-xray-pathology-classifier/
 ├── notebooks/          # Exploratory analysis and experiments
 │   └── chest_xray_classifier.ipynb
 │
-├── src/                # Notebook code organized by responsibility
-│   ├── dataset.py
-│   ├── model.py
-│   ├── train.py
-│   ├── evaluate.py
-│   └── utils.py
-│
 ├── reports/            # Project documentation
 │   └── final_report.pdf
 │
 ├── results/            # Generated results and figures
 │   ├── confusion_matrix.png
-│   └── training_curves.png
+│   └── epochs_analysis.png
 │
-├── requirements.txt
+├── src/                # Notebook code organized by responsibility
+│   ├── dataset.py
+│   ├── evaluate.py
+│   ├── model.py
+│   ├── train.py
+│   └── utils.py
+│
 ├── .gitignore
 ├── LICENSE
-└── README.md
+├── README.md
+└── requirements.txt
 ```
 
 ## 📄 Report
