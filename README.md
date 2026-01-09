@@ -100,7 +100,8 @@ learning projects.
 chest-xray-pathology-classifier/
 │
 ├── notebooks/          # Orchestrates experiments and result visualization
-│   └── chest_xray_classifier.ipynb
+│   ├── original_chest_xray_classifier.ipynb
+│   └── modeluar_chest_xray_classifier.ipynb
 │
 ├── src/                # Reusable, modular source code
 │   ├── dataset.py      # Dataset and DataLoader definitions
@@ -125,6 +126,34 @@ This structure ensures that:
 - Core logic is reusable outside the notebook
 - Experiments remain readable and reproducible
 - The project can scale beyond a single notebook
+
+---
+
+## 📓 Notebooks
+
+This repository contains two notebooks with distinct purposes:
+
+- `original_chest_xray_classifier.ipynb`  
+  Original experimental notebook used during development. It contains full
+  training execution and rendered outputs, demonstrating that the model and
+  methodology work as expected.
+
+- `modular_chest_xray_classifier.ipynb`  
+  Refactored version showcasing a clean and reusable code structure. Core logic
+  has been moved to the `src/` directory, following best practices for
+  maintainable machine learning projects.
+
+### ⚠️ Training Note
+
+The modularized notebook is provided **without executed training outputs** due to
+the high computational and financial cost of training DenseNet169 on high-resolution
+chest X-ray images.
+
+Model training requires access to a GPU-enabled environment (e.g., Google Colab Pro
+or equivalent). The original notebook includes executed outputs demonstrating the
+full training and evaluation process, while the modular version focuses on code
+organization, reusability, and best practices for scalable machine learning
+projects.
 
 ---
 
